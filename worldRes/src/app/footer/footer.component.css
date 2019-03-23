@@ -1,0 +1,13 @@
+#footer
+{
+    width: 100%;
+    background-color:#282C35 ;
+    text-align: center;
+    color: #c8eedf;
+    height: 40%;
+    border-bottom: 5px solid orangered;
+}
+#footer_add{
+    float: right;
+
+}

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+html,body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+    background-color: black;
+}
+.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: black !important;
+    color: black;
+}
+.mat-form-field.mat-focused .mat-form-field-label{
+    color: black;
+}
+.divider{
+    width: 100px;
+    height: 150px;
+}

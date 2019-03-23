@@ -1,0 +1,10 @@
+#products{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+.mat-card{
+    height: 100px;
+}

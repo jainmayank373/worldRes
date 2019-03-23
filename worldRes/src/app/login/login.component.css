@@ -1,0 +1,20 @@
+#login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.mat-form-field{
+    width: 300px !important;
+}
+.login_action{
+}
+#login{
+    text-align: center;
+    font-family:   'ZCOOL XiaoWei', serif;
+    background: url('../../assets/login.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

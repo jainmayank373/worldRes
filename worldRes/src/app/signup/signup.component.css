@@ -1,0 +1,17 @@
+#signup_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mat-form-field{
+    width: 300px !important;
+}
+#signup{
+    text-align: center;
+    background: url('../../assets/img1.jpg') ;
+    background-repeat:no-repeat;
+    background-size: cover; 
+    
+    font-family:   'ZCOOL XiaoWei', serif;
+}

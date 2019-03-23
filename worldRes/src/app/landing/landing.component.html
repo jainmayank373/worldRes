@@ -1,0 +1,44 @@
+<div id="landing">
+    <div id="landing_nav">
+        <button mat-button>HOME</button>
+        <button mat-button>ABOUT</button>
+        <button mat-button routerLink="login">LOGIN</button>
+        <div id="logo">
+            <img height="180px" width="200px" src="../../assets/logo.jpg">
+        </div>
+        <button mat-button routerLink="signup">SIGNUP</button>
+        <button mat-button>CONTACT</button>
+        
+        
+    </div>
+    <div id="landing_carousel">
+        <div id="social">
+            <mat-icon >restaurant</mat-icon><br>
+            <mat-icon>location_on</mat-icon><br>
+           <mat-icon>fastfood</mat-icon>
+        </div>
+         <mat-form-field>
+            <input matInput placeholder="Find reasturant">
+                <mat-icon matSuffix>location_on</mat-icon>
+        </mat-form-field>
+        <div id="carousel">
+            <div>
+                <div class="rotate-text">
+                    <h1>WELCOME</h1>
+                    <p >
+                    
+                        Nothing goes perfectly, especially when you're opening a restaurant.  
+                    </p>
+                </div>
+                <h1>WORLD REASTURANT</h1>
+                <img id="carousel-img1"  src="../../assets/img1.jpg">
+          </div>
+          <div id="skwed"></div>
+           
+        </div>
+        
+    </div>
+</div>
+
+<app-products></app-products>
+<app-footer></app-footer>

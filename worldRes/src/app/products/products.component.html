@@ -1,0 +1,16 @@
+
+<div id="products">
+            <h1>REASURANTS</h1>
+
+            <div id="products_list">
+                <mat-grid-list cols="4" >
+                      <mat-grid-tile *ngFor="let product of products ">
+                          <mat-card>  
+                            <mat-card-header>{{product.title}}</mat-card-header>
+                          </mat-card>
+                      </mat-grid-tile>
+
+                </mat-grid-list>
+
+            </div>
+</div>
