@@ -33,6 +33,7 @@ export class MapCComponent implements OnInit {
               console.log("MyResult",result[0].Latitude);
               this.lat = result[0].Latitude;
               this.lng = result[0].Longitude;
+              this.mapData = result[0];
               this.intializeMap();
         })
   }
@@ -41,8 +42,6 @@ export class MapCComponent implements OnInit {
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position=>{
 
-          this.lat = this.lat;
-          this.lng =this.lng;
           this.map.flyTo({
             center:[this.lng,this.lat]
           })

@@ -27,7 +27,7 @@ export class ProductsComponent implements OnInit {
        
 
         const dialogRef = this.dialog.open(MapCComponent,{
-          width:'500px',
+          width:'800px',
           height:'500px',
           data:this.products[event]
         });
