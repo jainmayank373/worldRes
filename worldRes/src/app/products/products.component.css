@@ -6,5 +6,29 @@
     font-family: 'ZCOOL XiaoWei', serif;
 }
 .mat-card{
-    height: 100px;
+    width:300px;
+    margin-top: 30px;
+    text-align: justify
+}
+
+#products_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+h3{
+    color: #123;
+
+}
+.booking{
+    color: orangered
+}
+.online{
+    color: orangered;
+}
+.rating{
+    color: lightgreen;
+    font-size: 20px !important;
 }

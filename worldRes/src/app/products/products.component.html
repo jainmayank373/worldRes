@@ -2,15 +2,53 @@
 <div id="products">
             <h1>REASURANTS</h1>
 
-            <div id="products_list">
-                <mat-grid-list cols="4" >
+            <div id="products_list" fxLayoutGap="20px">
+               <mat-card *ngFor="let product of products">
+                        <mat-card-header>
+                            <mat-card-title>
+                                {{product["Restaurant Name"] | uppercase}}
+                            </mat-card-title>
+                            <mat-card-subtitle>
+                                {{product["Cuisines"]}}
+                            </mat-card-subtitle>
+                        </mat-card-header>
+                        
+                            <mat-card-content>
+                                    <h3>
+                                      Average cost :{{product["Average Cost for two"]}}
+                                    </h3>
+                                    <span class="booking" >
+                                        Table booking: {{product["Has Table booking"]}}
+                                    </span>
+                                    |
+                                    <span class="online">
+                                        Online booking: {{product["Has Online delivery"]}}
+                                    </span><br>
+                                    <mat-icon>star_rate</mat-icon>
+                                        
+                                    <span class="rating">
+                                             {{product["Aggregate rating"]}}
+                                    </span><br>
+                                        <span>
+                                            {{product["Rating text"]}}
+                                        </span>
+                            </mat-card-content>
+                                    <mat-card-actions>
+                                        <button mat-raised-button color="warn"><mat-icon>location_on</mat-icon></button>
+                                        <button mat-raised-button color="warn"><mat-icon>bar_chart</mat-icon></button>
+                                    </mat-card-actions>
+               </mat-card>
+
+            </div>
+</div>
+
+<!--
+     <mat-grid-list cols="4" >
                       <mat-grid-tile *ngFor="let product of products ">
                           <mat-card>  
                             <mat-card-header>{{product.title}}</mat-card-header>
                           </mat-card>
                       </mat-grid-tile>
 
-                </mat-grid-list>
-
-            </div>
-</div>
+                </mat-grid-list
+            -->

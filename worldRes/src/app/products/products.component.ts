@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {HttpClient} from '@angular/common/http';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -7,32 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  products = [{
-    title:"Hello",
-    dish:"Punjabi"
-  },{
-
-    title:"Hello",
-    dish:"Punjabi"
-  },{
-
-    title:"Hello",
-    dish:"Punjabi"
-  },{
-    title:"Hello",
-    dish:"Punjabi"
-  },{
-
-    title:"Hello",
-    dish:"Punjabi"
-  },{
-
-    title:"Hello",
-    dish:"Punjabi"
-  }]
-  constructor() { }
+  products:any
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
+        this.http.get('http://localhost:3000/products').subscribe((result)=>{
+              this.products = result;
+              console.log(this.products);
+        })
   }
 
 }
