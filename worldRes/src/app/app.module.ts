@@ -7,12 +7,13 @@ import {RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
-import {MatButtonModule,MatInputModule,MatDividerModule,MatIconModule,MatCardModule,MatGridListModule} from '@angular/material';
+import {MatButtonModule,MatInputModule,MatDialogModule,MatDividerModule,MatIconModule,MatCardModule,MatGridListModule} from '@angular/material';
 import { LandingComponent } from './landing/landing.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { MapCComponent } from './map-c/map-c.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { SignupComponent } from './signup/signup.component';
     ProductsComponent,
     FooterComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    MapCComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +39,11 @@ import { SignupComponent } from './signup/signup.component';
     MatCardModule,
     MatGridListModule,
     MatDividerModule,
+    MatDialogModule,
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[MapCComponent]
 })
 export class AppModule { }

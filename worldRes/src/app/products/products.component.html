@@ -3,7 +3,7 @@
             <h1>REASURANTS</h1>
 
             <div id="products_list" fxLayoutGap="20px">
-               <mat-card *ngFor="let product of products">
+               <mat-card *ngFor="let product of products; let i= index">
                         <mat-card-header>
                             <mat-card-title>
                                 {{product["Restaurant Name"] | uppercase}}
@@ -34,7 +34,7 @@
                                         </span>
                             </mat-card-content>
                                     <mat-card-actions>
-                                        <button mat-raised-button color="warn"><mat-icon>location_on</mat-icon></button>
+                                        <button mat-raised-button (click)="openDialog(i)" color="warn"><mat-icon>location_on</mat-icon></button>
                                         <button mat-raised-button color="warn"><mat-icon>bar_chart</mat-icon></button>
                                     </mat-card-actions>
                </mat-card>

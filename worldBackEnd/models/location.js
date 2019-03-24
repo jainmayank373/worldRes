@@ -21,10 +21,10 @@ const locaSchema = new Schema({
         type:String
     },
     "Longitude":{
-        type:String
+        type:Number
     },
     "Latitude":{
-        type:String
+        type:Number
     }
 });
 
